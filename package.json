@@ -1,0 +1,42 @@
+{
+  "name": "hey-dad",
+  "description": "A super-celled library to greet your dad with HEY!",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "license": "MIT",
+  "author": "Tyo Nirwansyah",
+  "keywords": [
+    "hello-world",
+    "hello",
+    "hey",
+    "dad",
+    "hey-mom"
+  ],
+  "scripts": {
+    "prebuild": "npm run test",
+    "build": "tsc && rollup -c rollup.config.js",
+    "prepublishOnly": "npm run build",
+    "test": "jest",
+    "coverage": "jest --coverage"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.8",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-typescript": "^7.16.7",
+    "@types/jest": "^27.4.1",
+    "jest": "^27.5.1",
+    "rollup": "^2.70.1",
+    "ts-jest": "^27.1.4",
+    "typescript": "^4.6.3"
+  },
+  "files": [
+    "lib/"
+  ],
+  "exports": {
+    ".": {
+      "require": "./lib/index.cjs",
+      "import": "./lib/index.esm.js"
+    }
+  }
+}
