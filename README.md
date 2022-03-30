@@ -37,3 +37,7 @@ import { heyDad } from "hey-dad";
 
 console.log(heyDad("Papichulo")); // Hey, Papichulo!
 ```
+
+
+## Note 
+Please I need some contributions for them papi translations. It will help if yall ping in and contribute 😏
